@@ -1,14 +1,57 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import React, { useRef } from "react";
 
 const Agency = () => {
+  gsap.registerPlugin(ScrollTrigger);
 
   const imgDivRef = useRef(null);
+  const imgRef = useRef(null);
+
+  const imgArray = [
+    "/public/images/Carl_480x640.jpg",
+    "/public/images/CAMILLE_480X640_2.jpg",
+    "/public/images/ChantalG_480x640.jpg",
+    "/public/images/joel_480X640_3.jpg",
+    "/public/images/MEGGIE_480X640_2.jpg",
+    "/public/images/MEL_480X640.jpg",
+    "/public/images/Michele_480X640.jpg",
+    "/public/images/Olivier_480x640.jpg",
+  ];
+
+  useGSAP(function () {
+    gsap.to(imgDivRef.current, {
+      scrollTrigger: {
+        trigger: imgDivRef.current,
+        markers: true,
+        start: "top 30%",
+        end: "top -70%",
+        pin: true,
+        onUpdate: (elem) => {
+          let imgIndex;
+
+          if (elem.progress < 1) {
+            imgIndex = Math.floor(elem.progress * imgArray.length);
+          } else {
+            imgIndex = imgArray.length - 1;
+          }
+
+          imgRef.current.src = imgArray[imgIndex];
+        },
+      },
+    });
+  });
 
   return (
     <div>
       <div className="section1">
-        <div ref={imgDivRef} className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-3xl top-90 left-[30vw]">
+        <div
+          ref={imgDivRef}
+          className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-3xl top-96 left-[30vw]"
+        >
           <img
+            ref={imgRef}
             className="h-full w-full object-cover"
             src="/public/images/Carl_480x640.jpg"
             alt=""
