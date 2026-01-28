@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap/all";
+import gsap from "gsap";
 import React, { useRef } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const Stairs = (props) => {
       tl.from(".stair", {
         height: 0,
         stagger: {
-          amount: -0.25,
+          amount: -0.2,
         },
       });
       tl.to(".stair", {
