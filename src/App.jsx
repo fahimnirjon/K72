@@ -8,7 +8,7 @@ import FullNav from "./components/navigation/FullNav";
 
 const App = () => {
   return (
-    <div className="text-white overflow-x-hidden">
+    <div className="overflow-x-hidden">
       
         <Navbar/>
         <FullNav/>
