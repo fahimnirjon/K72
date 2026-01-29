@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useContext, useRef } from "react";
+import React, { useContext,useRef } from "react";
 import { NavbarContext } from "../../context/NavContext";
 
 const FullNav = () => {
@@ -30,7 +30,6 @@ const FullNav = () => {
     });
     tl.to(".navlink", {
       opacity: 1,
-
     });
   }
   function gsapAnimationReverse() {
@@ -168,7 +167,7 @@ const FullNav = () => {
                   alt=""
                 />
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout savior
+                  Pour Tout savoir
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -203,7 +202,7 @@ const FullNav = () => {
             <div className="moveLink absolute text-black flex top-0 bg-[#D3FD50]">
               <div className="moveX flex items-center">
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  Pour envoyer un fax
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -211,7 +210,7 @@ const FullNav = () => {
                   alt=""
                 />
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  Pour envoyer un fax
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -221,7 +220,7 @@ const FullNav = () => {
               </div>
               <div className="moveX flex items-center">
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  Pour envoyer un fax
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -229,7 +228,7 @@ const FullNav = () => {
                   alt=""
                 />
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  Pour envoyer un fax
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -254,7 +253,7 @@ const FullNav = () => {
                   alt=""
                 />
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  lire les articles
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -264,7 +263,7 @@ const FullNav = () => {
               </div>
               <div className="moveX flex items-center">
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  lire les articles
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
@@ -272,7 +271,7 @@ const FullNav = () => {
                   alt=""
                 />
                 <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl  text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
-                  Pour Tout voir
+                  lire les articles
                 </h2>
                 <img
                   className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
